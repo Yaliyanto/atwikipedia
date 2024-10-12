@@ -7,7 +7,7 @@ from pageobject.pagenavbar import *
 from pageobject.pageonboaring import *
 from pageobject.pagejelajahi import *
 from pageobject.pagepengaturan import *
-from helper.common2 import *
+
 
 def init_driver():
     options = UiAutomator2Options()
@@ -63,7 +63,7 @@ def setup():
 def test_logout_no_hardcode(setup):
     halamanonboarding = OnboardingPage(setup)
     buttonnavbar = NavbarButton(setup)
-    askiscroll = Aksi_Scroll(setup)
+    # askiscroll = Aksi_Scroll(setup)
     halamanpengaturan = PengaturanPage(setup)
     halamanjelajahi = JelajahiPage(setup)
     
@@ -71,7 +71,7 @@ def test_logout_no_hardcode(setup):
     halamanonboarding.click_button_lewati()
     buttonnavbar.click_button_selebihnya()
     buttonnavbar.click_button_pengaturan()
-    askiscroll.test_scroll()
+    # askiscroll.test_scroll()
     halamanpengaturan.click_button_logout()
     halamanpengaturan.click_button_logout_popup()
    

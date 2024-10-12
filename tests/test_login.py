@@ -8,7 +8,6 @@ from pageobject.pageonboaring import *
 from pageobject.pagejelajahi import *
 from pageobject.pagepengaturan import *
 from appium.webdriver.common.touch_action import TouchAction
-from helper.common2 import *
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
