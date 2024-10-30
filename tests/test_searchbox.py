@@ -6,7 +6,6 @@ from pageobject.pagemasuklog import *
 from pageobject.pagenavbar import *
 from pageobject.pageonboaring import *
 from pageobject.pagejelajahi import *
-from helper.common2 import *
 
 from time import sleep
 

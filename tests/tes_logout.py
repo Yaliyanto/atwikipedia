@@ -7,7 +7,7 @@ from pageobject.pagenavbar import *
 from pageobject.pageonboaring import *
 from pageobject.pagejelajahi import *
 from pageobject.pagepengaturan import *
-from helper.common2 import *
+
 
 def init_driver():
     options = UiAutomator2Options()
