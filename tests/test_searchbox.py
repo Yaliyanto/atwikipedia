@@ -32,13 +32,12 @@ def setup():
 def test_search_box(setup):
     halamanonboarding = OnboardingPage(setup)
     halamanjelajahi = JelajahiPage(setup)
-    scroll = Aksi_Scroll(setup)
+    # scroll = Aksi_Scroll(setup)
 
     halamanonboarding.click_button_lewati()
     halamanjelajahi.click_kolom_search()
     halamanjelajahi.input_kolom_search()
     sleep(3)
-    scroll.test_scroll_davidbayu()
     halamanjelajahi.click_list_nama_david_bayu()
     
     text = halamanjelajahi.validasi_keyword_davidbayu()
