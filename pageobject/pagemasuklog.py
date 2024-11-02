@@ -10,13 +10,19 @@ class MasukLogPage:
         self.driver.find_element(AppiumBy.XPATH,MasukLogLocator.input_nama_pengguna).click()
 
     def input_nama_pengguna(self):    
-        self.driver.find_element(AppiumBy.XPATH,MasukLogLocator.input_nama_pengguna).send_keys("Yali Yano")
+        self.driver.find_element(AppiumBy.XPATH,MasukLogLocator.input_nama_pengguna).send_keys("Yali Yanto")
+
+    def input_nama_pengguna_salah(self):    
+        self.driver.find_element(AppiumBy.XPATH,MasukLogLocator.input_nama_pengguna).send_keys("Yali Yato")
 
     def click_kolom_kata_sandi(self):    
         self.driver.find_element(AppiumBy.XPATH,MasukLogLocator.input_kata_sandi).click()
 
     def input_kata_sandi(self):    
-        self.driver.find_element(AppiumBy.XPATH,MasukLogLocator.input_kata_sandi).send_keys("kompor23")
+        self.driver.find_element(AppiumBy.XPATH,MasukLogLocator.input_kata_sandi).send_keys("kompor123")
+
+    def input_kata_sandi_salah(self):    
+        self.driver.find_element(AppiumBy.XPATH,MasukLogLocator.input_kata_sandi).send_keys("kompor1")
 
     def click_button_masuk_log(self):    
         self.driver.find_element(AppiumBy.ID,MasukLogLocator.button_masuk_log).click()
