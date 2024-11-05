@@ -1,7 +1,5 @@
 import os
 from selenium.common.exceptions import NoSuchElementException
-from locators.pengaturan_locator import PengaturanLocator
-from appium.webdriver.common.appiumby import AppiumBy
 
 class AksiSwipe:
     def __init__(self, driver):
