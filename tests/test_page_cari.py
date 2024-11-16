@@ -44,7 +44,7 @@ def test_page_cari_popup_panjang(setup):
     buttonnavbar.click_button_cari()
     halamancari.click_kolom_cari_wikipedia()
     halamancari.input_kolom_cari_wikipedia()
-    halamancari.click_nama_maudy_efforsina()
+    halamancari.click_film_john_wick()
     detailarticle.click_button_simpan()
     try:
         WebDriverWait(setup, 10).until(EC.presence_of_element_located((AppiumBy.ID,'org.wikipedia:id/snackbar_text')))
@@ -53,7 +53,7 @@ def test_page_cari_popup_panjang(setup):
     except TimeoutException:
         print('element gak muncul')
 
-    assert pop_up_panjang_text == 'Maudy Effrosina disimpan. Apakah anda mau menambahkannya ke daftar?'
+    assert pop_up_panjang_text == 'John Wick (film) disimpan. Apakah anda mau menambahkannya ke daftar?'
 
 
 
