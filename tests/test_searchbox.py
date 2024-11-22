@@ -30,17 +30,17 @@ def setup():
     yield driver
 
 def test_search_box(setup):
-    halamanonboarding = OnboardingPage(setup)
-    halamanjelajahi = JelajahiPage(setup)
+    halaman_onboarding = OnboardingPage(setup)
+    halaman_jelajahi = JelajahiPage(setup)
     # scroll = Aksi_Scroll(setup)
 
-    halamanonboarding.click_button_lewati()
-    halamanjelajahi.click_kolom_search()
-    halamanjelajahi.input_kolom_search()
+    halaman_onboarding.click_button_lewati()
+    halaman_jelajahi.click_kolom_search()
+    halaman_jelajahi.input_kolom_search()
     sleep(3)
-    halamanjelajahi.click_list_nama_david_bayu()
+    halaman_jelajahi.click_list_nama_david_bayu()
     
-    text = halamanjelajahi.validasi_keyword_davidbayu()
+    text = halaman_jelajahi.validasi_keyword_davidbayu()
 
 #     assert text == 'David Bayu'
     

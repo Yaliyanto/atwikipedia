@@ -35,17 +35,17 @@ def setup():
 
 
 def test_page_cari_popup_panjang(setup):
-    halamanonboarding = OnboardingPage(setup)
-    buttonnavbar =  NavbarButton(setup)
-    halamancari = PageCari(setup)
-    detailarticle = NavabarDetailArticle(setup)
+    halaman_onboarding = OnboardingPage(setup)
+    button_navbar =  NavbarButton(setup)
+    halaman_cari = PageCari(setup)
+    detail_article = NavabarDetailArticle(setup)
 
-    halamanonboarding.click_button_lewati()
-    buttonnavbar.click_button_cari()
-    halamancari.click_kolom_cari_wikipedia()
-    halamancari.input_kolom_cari_wikipedia()
-    halamancari.click_film_john_wick()
-    detailarticle.click_button_simpan()
+    halaman_onboarding.click_button_lewati()
+    button_navbar.click_button_cari()
+    halaman_cari.click_kolom_cari_wikipedia()
+    halaman_cari.input_kolom_cari_wikipedia()
+    halaman_cari.click_film_john_wick()
+    detail_article.click_button_simpan()
     try:
         WebDriverWait(setup, 10).until(EC.presence_of_element_located((AppiumBy.ID,'org.wikipedia:id/snackbar_text')))
         pop_up_panjang_text = setup.find_element(AppiumBy.ID, 'org.wikipedia:id/snackbar_text').text
