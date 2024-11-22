@@ -28,36 +28,36 @@ def setup():
     driver = init_driver()
     yield driver
 
-# def test_logout(setup):
-#     halamanonboarding = OnboardingPage(setup)
-#     buttonnavbar = NavbarButton(setup)
-#     aksiswipe = SwipeBawah(setup)
-#     halamanpengaturan = PengaturanPage(setup)
-#     halamanjelajahi = JelajahiPage(setup)
+def test_logout(setup):
+    halamanonboarding = OnboardingPage(setup)
+    buttonnavbar = NavbarButton(setup)
+    aksiswipe = SwipeBawah(setup)
+    halamanpengaturan = PengaturanPage(setup)
+    halamanjelajahi = JelajahiPage(setup)
     
     
-#     halamanonboarding.click_button_lewati()
-#     buttonnavbar.click_button_selebihnya()
-#     buttonnavbar.click_button_pengaturan()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     aksiswipe.scroll_atas()
-#     halamanpengaturan.click_button_logout()
-#     halamanpengaturan.click_button_logout_popup()
+    halamanonboarding.click_button_lewati()
+    buttonnavbar.click_button_selebihnya()
+    buttonnavbar.click_button_pengaturan()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    aksiswipe.scroll_atas()
+    halamanpengaturan.click_button_logout()
+    halamanpengaturan.click_button_logout_popup()
 
-#     text = halamanjelajahi.validasi_button_mengerti()
-#     assert text == 'Mengerto'
+    text = halamanjelajahi.validasi_button_mengerti()
+    assert text == 'Mengerto'
     
 
 def test_logout_no_hardcode(setup):
