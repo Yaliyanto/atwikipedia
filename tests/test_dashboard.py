@@ -30,11 +30,11 @@ def setup():
 
 
 def test_button_mengerti_dashboard(setup):
-    halamanonboarding = OnboardingPage(setup)
-    halamanjelajahi =  JelajahiPage(setup)
+    halaman_onboarding = OnboardingPage(setup)
+    halaman_jelajahi =  JelajahiPage(setup)
 
 
-    halamanonboarding.click_button_lewati()
-    halamanjelajahi.click_button_mengerti()
+    halaman_onboarding.click_button_lewati()
+    halaman_jelajahi.click_button_mengerti()
 
     
