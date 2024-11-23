@@ -105,7 +105,7 @@ def test_login_positive_then_logout(setup):
     halaman_masuk_log.click_button_masuk_log()
     button_navbar.click_button_selebihnya() 
     button_navbar.click_button_pengaturan()
-    element_locator = (AppiumBy.ID, PengaturanLocator.button_keluar_logout)
+    element_locator = (AppiumBy.ID, PengaturanLocator.list_keluar_logout)
     aksi_scroll.scroll_using_adb_until_element_found(element_locator)
     halaman_pengaturan.click_button_logout()
     halaman_pengaturan.click_button_logout_popup()
