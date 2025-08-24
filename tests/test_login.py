@@ -35,27 +35,27 @@ def setup():
     yield driver
 
 # Use valid data to login to Wikipedia
-# def test_login_positive(setup):
-#     halamanonboarding = OnboardingPage(setup)
-#     buttonnavbar = NavbarButton(setup)
-#     buatakunbaru = BuatAkunbarupage(setup)
-#     halamanmasuklog = MasukLogPage(setup)
-#     halamanjelajahi = JelajahiPage(setup)
+def test_login_positive(setup):
+    halamanonboarding = OnboardingPage(setup)
+    buttonnavbar = NavbarButton(setup)
+    buatakunbaru = BuatAkunbarupage(setup)
+    halamanmasuklog = MasukLogPage(setup)
+    halamanjelajahi = JelajahiPage(setup)
     
     
-#     halamanonboarding.click_button_lewati()
-#     buttonnavbar.click_button_selebihnya()
-#     buttonnavbar.click_button_masuk_log()
-#     buatakunbaru.click_button_masuk_log_buat_akun_baru()
-#     halamanmasuklog.click_kolom_nama_pengguna()
-#     halamanmasuklog.input_nama_pengguna()
-#     halamanmasuklog.click_kolom_kata_sandi()
-#     halamanmasuklog.input_kata_sandi()
-#     halamanmasuklog.click_button_masuk_log()
-#     halamanjelajahi.validasi_button_mengerti()
+    halamanonboarding.click_button_lewati()
+    buttonnavbar.click_button_selebihnya()
+    buttonnavbar.click_button_masuk_log()
+    buatakunbaru.click_button_masuk_log_buat_akun_baru()
+    halamanmasuklog.click_kolom_nama_pengguna()
+    halamanmasuklog.input_nama_pengguna()
+    halamanmasuklog.click_kolom_kata_sandi()
+    halamanmasuklog.input_kata_sandi()
+    halamanmasuklog.click_button_masuk_log()
+    halamanjelajahi.validasi_button_mengerti()
     
-#     text = halamanjelajahi.validasi_button_mengerti()
-#     assert text == 'Mengerti'
+    text = halamanjelajahi.validasi_button_mengerti()
+    assert text == 'Mengerti'
 
 #use invalid data to login to Wikipedia
 # def test_login_negative(setup):
